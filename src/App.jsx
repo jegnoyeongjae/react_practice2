@@ -43,9 +43,9 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home diaryData={diaryData} />} />
-          <Route path="/list" element={<ListPage />} />
-          <Route path="/detail/:id" element={<DetailPage />} />
+          <Route path="/" element={<Home  />} />
+          <Route path="/list" element={<ListPage diaryData={diaryData}/>} />
+          <Route path="/detail/:id" element={<DetailPage diaryData={diaryData}/>} />
           <Route path="/new" element={<CreatePage />} />
           <Route path="/edit/:id" element={<EditPage />} />
         </Routes>
